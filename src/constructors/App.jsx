@@ -1,23 +1,13 @@
-import logo from '../static/images/logo.svg';
 import '../static/css/App.css';
+
+import FunctionalGreetings from "../components/FunctionalGreetings";
+import FunctionalGreetingsWithProps from "../components/FunctionalGreetingsWithProps";
 
 const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+        <div className='App'>
+            <FunctionalGreetings/>
+            <FunctionalGreetingsWithProps greeting='Nice to meet you!' name='Mike' age='32'/>
         </div>
     );
 }
